@@ -1,0 +1,66 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="mVoteMain.master.vb" Inherits="mVote.mVoteMain" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style>
+			ul
+		{
+			list-style-type:none;
+			margin:0;
+			padding:10px 15px 10px 15px;
+			overflow:hidden;
+			background-color:#333;
+		}
+		li
+		{
+			float:left;
+     
+		}
+		li a
+		{
+			display:block;
+			color:white;
+			text-align:center;
+			padding:14px 16px;
+			text-decoration:none;
+		}
+		li a:hover
+		{
+			background-color:#111;
+		}
+        li div.div-inline
+        { 
+            display:inline;
+			color:white;
+			text-align:center;
+            padding-left:15px;
+			padding-right:15px;
+            padding-top:5px;
+            padding-bottom:5px;
+			
+        }
+        
+		</style>
+</head>
+<body>
+    <ul>
+		<%--<li><a class="active" href="~">主页</a></li>
+		<li><a href="#news">新闻</a></li>
+		--%>
+        <li><div class="div-inline">在线投票系统</div></li>
+        <li><div class="div-inline" style="float:right;">未登录</div></li>
+	</ul>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
