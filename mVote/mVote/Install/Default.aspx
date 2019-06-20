@@ -9,7 +9,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ProviderName="<%$ ConnectionStrings:masterConnectionString.ProviderName %>" SelectCommand="SELECT * FROM [Table]"></asp:SqlDataSource>
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" SelectCommand="SELECT * FROM [Table]" ConnectionString="<%$ ConnectionStrings:LocalMasterConnectionString %>"></asp:SqlDataSource>
     欢迎安装数据库，您的数据库是：
         <div>
         </div>
