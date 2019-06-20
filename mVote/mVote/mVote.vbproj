@@ -77,7 +77,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Admin\Admin.aspx" />
-    <Content Include="Install\Install.aspx" />
+    <Content Include="Install\Default.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -89,11 +89,11 @@
       <DependentUpon>Admin.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="Install\Install.aspx.designer.vb">
-      <DependentUpon>Install.aspx</DependentUpon>
+    <Compile Include="Install\Default.aspx.designer.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Install\Install.aspx.vb">
-      <DependentUpon>Install.aspx</DependentUpon>
+    <Compile Include="Install\Default.aspx.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Default.aspx.designer.vb">
