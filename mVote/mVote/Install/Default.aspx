@@ -9,8 +9,9 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" SelectCommand="SELECT * FROM [Table]" ConnectionString="<%$ ConnectionStrings:LocalMasterConnectionString %>"></asp:SqlDataSource>
-    欢迎安装数据库，您的数据库是：
+        <div>欢迎安装数据库，以下是您的数据库连接信息：</div>
+        <div><asp:Label ID="Label1" runat="server" Text="Label"></asp:Label></div>
+        <div>请核对以上连接信息是否正确，如需要修改，请停止IIS，并编辑web.config</div>
         <div>
         </div>
     </form>
