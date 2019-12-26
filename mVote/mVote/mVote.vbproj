@@ -52,6 +52,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Modules\" />
     <Folder Include="My Project\PublishProfiles\" />
   </ItemGroup>
   <ItemGroup>
