@@ -23,20 +23,47 @@ Partial Public Class _Default1
     Protected WithEvents form1 As Global.System.Web.UI.HtmlControls.HtmlForm
 
     '''<summary>
-    '''MKXML 控件。
+    '''tbAllVotes 控件。
     '''</summary>
     '''<remarks>
     '''自动生成的字段。
     '''若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
     '''</remarks>
-    Protected WithEvents MKXML As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents tbAllVotes As Global.System.Web.UI.WebControls.Table
 
     '''<summary>
-    '''Label1 控件。
+    '''tbAVR1 控件。
     '''</summary>
     '''<remarks>
     '''自动生成的字段。
     '''若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
     '''</remarks>
-    Protected WithEvents Label1 As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents tbAVR1 As Global.System.Web.UI.WebControls.TableRow
+
+    '''<summary>
+    '''tbAVR1C1 控件。
+    '''</summary>
+    '''<remarks>
+    '''自动生成的字段。
+    '''若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+    '''</remarks>
+    Protected WithEvents tbAVR1C1 As Global.System.Web.UI.WebControls.TableCell
+
+    '''<summary>
+    '''tbAVR1C2 控件。
+    '''</summary>
+    '''<remarks>
+    '''自动生成的字段。
+    '''若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+    '''</remarks>
+    Protected WithEvents tbAVR1C2 As Global.System.Web.UI.WebControls.TableCell
+
+    '''<summary>
+    '''tbAVR1C3 控件。
+    '''</summary>
+    '''<remarks>
+    '''自动生成的字段。
+    '''若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+    '''</remarks>
+    Protected WithEvents tbAVR1C3 As Global.System.Web.UI.WebControls.TableCell
 End Class
