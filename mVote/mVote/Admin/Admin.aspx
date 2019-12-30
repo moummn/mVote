@@ -10,7 +10,10 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <asp:Button ID="mkXML" runat="server" Text="MAKE XML" />
+            <asp:Button ID="MKXML" runat="server" Text="MAKE XML" />
+            <br />
+            <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+            <br />
         </div>
     </form>
 </body>

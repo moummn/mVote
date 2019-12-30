@@ -6,7 +6,11 @@ Public Class CSysXML
 
     Public Sub New(ByVal File As String)
         MyClass.XmlFile = File
-        MyClass.mXmlDoc.Load(MyClass.XmlFile)       '加载配置文件  
+        Try
+            MyClass.mXmlDoc.Load(MyClass.XmlFile)       '加载配置文件  
+        Catch ex As System.IO.FileNotFoundException
+            'MyClass.mXmlDoc.Save(MyClass.XmlFile)
+        End Try
     End Sub
 
     '功能：取得元素值  
@@ -28,16 +32,21 @@ Err:
     '参数：node--节点名称     element--元素名       val--值  
     '返回：True--保存成功     False--保存失败  
     Public Function SaveElement(ByVal node As String, ByVal element As String, ByVal val As String) As Boolean
-        On Error GoTo err
+        'On Error GoTo err
         Dim mXmlNode As System.Xml.XmlNode = mXmlDoc.SelectSingleNode("//" + node)
         Dim xmlNodeNew As System.Xml.XmlNode
 
-        xmlNodeNew = mXmlNode.SelectSingleNode(element)
+        Try
+            xmlNodeNew = mXmlNode.SelectSingleNode(element)
+        Catch ex As System.NullReferenceException
+            xmlNodeNew = mXmlDoc.CreateXmlDeclaration("1.0", "gb2312", vbNullString)
+            mXmlDoc.AppendChild(xmlNodeNew)
+        End Try
         xmlNodeNew.InnerText = val
         mXmlDoc.Save(MyClass.XmlFile)
         Return True
-err:
-        Return False
+        'err:
+        'Return False
     End Function
 End Class
 
@@ -63,5 +72,3 @@ End Class
 '    End Sub
 'End Class
 '————————————————
-'版权声明： 本文为CSDN博主「骷髅会-北极熊」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
-'原文链接： https : //blog.csdn.net/wang19850219/article/details/41543473
