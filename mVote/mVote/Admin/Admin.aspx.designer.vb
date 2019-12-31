@@ -66,4 +66,13 @@ Partial Public Class _Default1
     '''若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
     '''</remarks>
     Protected WithEvents tbAVR1C3 As Global.System.Web.UI.WebControls.TableCell
+
+    '''<summary>
+    '''btnAdd 控件。
+    '''</summary>
+    '''<remarks>
+    '''自动生成的字段。
+    '''若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+    '''</remarks>
+    Protected WithEvents btnAdd As Global.System.Web.UI.WebControls.Button
 End Class
