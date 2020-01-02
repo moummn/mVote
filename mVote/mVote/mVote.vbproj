@@ -77,6 +77,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Admin\Admin.aspx" />
+    <Content Include="Admin\Admin1.aspx" />
+    <Content Include="Admin\mVoteAll.xml" />
+    <Content Include="Admin\XSLTFile1.xslt" />
     <Content Include="Install\Default.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="Web.config" />
@@ -87,6 +90,13 @@
     </Compile>
     <Compile Include="Admin\Admin.aspx.vb">
       <DependentUpon>Admin.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin1.aspx.designer.vb">
+      <DependentUpon>Admin1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Admin1.aspx.vb">
+      <DependentUpon>Admin1.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Install\Default.aspx.designer.vb">

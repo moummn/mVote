@@ -51,14 +51,10 @@
                     <asp:TableCell runat="server" ID="tbAVR1C3" Cssclass="Col3">操作</asp:TableCell>
                 </asp:TableRow>
                 <asp:TableRow runat="server">
-                    <asp:TableCell runat="server" CssClass="Col1">1</asp:TableCell>
-                    <asp:TableCell runat="server" CssClass="Col2">NAme</asp:TableCell>
-                    <asp:TableCell runat="server" CssClass="Col3">复制 删除</asp:TableCell>
-                </asp:TableRow>
-                <asp:TableRow runat="server">
-                    <asp:TableCell runat="server" CssClass="Add1" >
-                        <asp:Button ID="btnAdd" runat="server" Text="增加" BorderStyle="None" CssClass="Add1" Font-Size="Medium" /></asp:TableCell>
-                    <asp:TableCell runat="server" CssClass="Add1" colspan="2"></asp:TableCell>
+                    <asp:TableCell runat="server" CssClass="Add1"  >
+                        <asp:Button ID="btnAdd" runat="server" Text="增加" CssClass="Add1" Font-Size="Medium" />
+                    </asp:TableCell>
+                    <asp:TableCell runat="server" CssClass="Add1" ColumnSpan="2"></asp:TableCell>
                 </asp:TableRow>
             </asp:Table>
         </div>
