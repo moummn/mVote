@@ -11,7 +11,7 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class Admin
+Partial Public Class Admin_EditP
 
     '''<summary>
     '''form1 控件。
@@ -23,20 +23,11 @@ Partial Public Class Admin
     Protected WithEvents form1 As Global.System.Web.UI.HtmlControls.HtmlForm
 
     '''<summary>
-    '''gvAllLists 控件。
+    '''Label1 控件。
     '''</summary>
     '''<remarks>
     '''自动生成的字段。
     '''若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
     '''</remarks>
-    Protected WithEvents gvAllLists As Global.System.Web.UI.WebControls.GridView
-
-    '''<summary>
-    '''SqlDataSource_mvoteindex 控件。
-    '''</summary>
-    '''<remarks>
-    '''自动生成的字段。
-    '''若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-    '''</remarks>
-    Protected WithEvents SqlDataSource_mvoteindex As Global.System.Web.UI.WebControls.SqlDataSource
+    Protected WithEvents Label1 As Global.System.Web.UI.WebControls.Label
 End Class
