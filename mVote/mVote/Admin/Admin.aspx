@@ -17,7 +17,7 @@
                     <HeaderStyle Width="10%" />
                     <ItemStyle HorizontalAlign="Center" />
                     </asp:BoundField>
-                    <asp:BoundField DataField="cdatetime" HeaderText="创建日期时间" SortExpression="cdatetime" InsertVisible="False" ReadOnly="True" >
+                    <asp:BoundField DataField="cdatetime" HeaderText="创建日期时间" SortExpression="cdatetime" >
                     <HeaderStyle Width="20%" />
                     <ItemStyle HorizontalAlign="Center" />
                     </asp:BoundField>
@@ -34,8 +34,7 @@
                             &nbsp;<asp:Button ID="Button2" runat="server" CausesValidation="False" CommandName="Cancel" Text="取消" />
                         </EditItemTemplate>
                         <ItemTemplate>
-                            <asp:Button ID="Button1" runat="server" CausesValidation="False" CommandName="Edit" Text="重命名" />
-                            &nbsp;<asp:Button ID="Button2" runat="server" CausesValidation="False" CommandName="New" Text="复制" />
+                            <asp:Button ID="Button2" runat="server" CausesValidation="False" CommandName="Copy" Text="复制" OnClick="Button2_Click" />
                             &nbsp;<asp:Button ID="Button3" runat="server" CausesValidation="False" CommandName="Delete" Text="删除" />
                         </ItemTemplate>
                         <HeaderStyle Width="20%" />
@@ -54,7 +53,7 @@
                 <RowStyle BackColor="#F7F6F3" ForeColor="#333333" />
                 <SelectedRowStyle BackColor="#E2DED6" Font-Bold="True" ForeColor="#333333" />
             </asp:GridView>
-            <asp:SqlDataSource ID="SqlDataSource_mvoteindex" runat="server" ConnectionString="<%$ ConnectionStrings:mVoteConnectionString %>" SelectCommand="SELECT * FROM [mvoteindex]" DeleteCommand="DELETE FROM [mvoteindex] WHERE [id] = @id" InsertCommand="INSERT INTO [mvoteindex] ([id], [cdatetime], [pname]) VALUES (@id, @cdatetime, @pname)" UpdateCommand="UPDATE [mvoteindex] SET [pname] = @pname WHERE [id] = @id">
+            <asp:SqlDataSource ID="SqlDataSource_mvoteindex" runat="server" ConnectionString="<%$ ConnectionStrings:mVoteConnectionString %>" SelectCommand="SELECT * FROM [mvoteindex]" DeleteCommand="DELETE FROM [mvoteindex] WHERE [id] = @id" InsertCommand="INSERT INTO [mvoteindex] ([id], [cdatetime], [pname]) VALUES (@id, @cdatetime, @pname)" UpdateCommand="UPDATE [mvoteindex] SET [cdatetime] = @cdatetime, [pname] = @pname WHERE [id] = @id">
                 <DeleteParameters>
                     <asp:Parameter Name="id" Type="Int32" />
                 </DeleteParameters>

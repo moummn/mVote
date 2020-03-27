@@ -8,4 +8,9 @@
             gvAllLists.Rows(I).Cells(2).Text = "<a href="".\Admin_EditP.aspx?id=" & gvAllLists.Rows(I).Cells(0).Text & """ target=""_blank"">" & S & "</a>"
         Next
     End Sub
+
+    Protected Sub Button2_Click(sender As Object, e As EventArgs)
+        Dim RowIndex As Integer = sender.BindingContainer.RowIndex
+        'Todo
+    End Sub
 End Class
