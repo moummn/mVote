@@ -79,6 +79,7 @@
     <Content Include="Admin\Admin.aspx" />
     <Content Include="Admin\Admin1.aspx" />
     <Content Include="Admin\Admin_EditP.aspx" />
+    <Content Include="Admin\Admin_NewP.aspx" />
     <Content Include="Admin\mVoteAll.xml" />
     <Content Include="Admin\XSLTFile1.xslt" />
     <Content Include="Install\Default.aspx" />
@@ -105,6 +106,13 @@
     </Compile>
     <Compile Include="Admin\Admin_EditP.aspx.vb">
       <DependentUpon>Admin_EditP.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin_NewP.aspx.designer.vb">
+      <DependentUpon>Admin_NewP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Admin_NewP.aspx.vb">
+      <DependentUpon>Admin_NewP.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Install\Default.aspx.designer.vb">

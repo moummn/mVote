@@ -1,4 +1,4 @@
-﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="Admin_EditP.aspx.vb" Inherits="mVote.Admin_EditP" %>
+﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="Admin_NewP.aspx.vb" Inherits="mVote.Admin_NewP" %>
 
 <!DOCTYPE html>
 
@@ -7,7 +7,6 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
     <style type="text/css">
-
         .tbLeft {
             height: 21px;
             width: 90px;
@@ -20,10 +19,8 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
-            编辑页面<asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
-            
-            <br />
+        新建/复制项目：<br />
+        <br />
         <table style="width:100%;">
             <tr>
                 <td class="tbLeft" >项目ID：</td>
@@ -41,9 +38,13 @@
                 </td>
             </tr>
         </table>
-            
-        </div>
-                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:mVoteConnectionString %>" SelectCommand="SELECT * FROM [mvoteindex]"></asp:SqlDataSource>        
+        <br />
+        <asp:Button ID="btnSave" runat="server" Text="保存" />
+    &nbsp;
+        <asp:Button ID="btnCancel" runat="server" Text="取消" />
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:mVoteConnectionString %>" SelectCommand="SELECT * FROM [mvoteindex]"></asp:SqlDataSource>
+        <br />
+        <br />
     </form>
 </body>
 </html>

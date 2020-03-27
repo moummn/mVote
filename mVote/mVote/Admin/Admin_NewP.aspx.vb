@@ -1,8 +1,7 @@
-﻿Public Class Admin_EditP
+﻿Public Class Admin_NewP
     Inherits System.Web.UI.Page
     Dim NewID As Long = 0
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
-        Label1.Text = Request.QueryString("id")
         NewID = Int(Val(Request.QueryString("id").ToString))
         If NewID <= 0 Then
             NewID = 0

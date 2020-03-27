@@ -11,7 +11,7 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class Admin_EditP
+Partial Public Class Admin_NewP
 
     '''<summary>
     '''form1 控件。
@@ -21,15 +21,6 @@ Partial Public Class Admin_EditP
     '''若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
     '''</remarks>
     Protected WithEvents form1 As Global.System.Web.UI.HtmlControls.HtmlForm
-
-    '''<summary>
-    '''Label1 控件。
-    '''</summary>
-    '''<remarks>
-    '''自动生成的字段。
-    '''若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-    '''</remarks>
-    Protected WithEvents Label1 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
     '''lblid 控件。
@@ -57,6 +48,24 @@ Partial Public Class Admin_EditP
     '''若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
     '''</remarks>
     Protected WithEvents tbPName As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''btnSave 控件。
+    '''</summary>
+    '''<remarks>
+    '''自动生成的字段。
+    '''若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+    '''</remarks>
+    Protected WithEvents btnSave As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''btnCancel 控件。
+    '''</summary>
+    '''<remarks>
+    '''自动生成的字段。
+    '''若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+    '''</remarks>
+    Protected WithEvents btnCancel As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
     '''SqlDataSource1 控件。

@@ -11,6 +11,11 @@
 
     Protected Sub Button2_Click(sender As Object, e As EventArgs)
         Dim RowIndex As Integer = sender.BindingContainer.RowIndex
-        'Todo
+        Dim RowID As Long = CLng(gvAllLists.Rows(RowIndex).Cells(0).Text)
+
+
+        Exit Sub
+ErrLine:
+
     End Sub
 End Class
