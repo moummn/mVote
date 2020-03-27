@@ -21,9 +21,7 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            编辑页面<asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
-            
-            <br />
+            详细信息<br />
         <table style="width:100%;">
             <tr>
                 <td class="tbLeft" >项目ID：</td>

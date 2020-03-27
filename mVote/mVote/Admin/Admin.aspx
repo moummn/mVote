@@ -34,12 +34,12 @@
                             &nbsp;<asp:Button ID="Button2" runat="server" CausesValidation="False" CommandName="Cancel" Text="取消" />
                         </EditItemTemplate>
                         <ItemTemplate>
-                            <asp:Button ID="Button2" runat="server" CausesValidation="False" CommandName="Copy" Text="复制" OnClick="Button2_Click" />
-                            &nbsp;<asp:Button ID="Button3" runat="server" CausesValidation="False" CommandName="Delete" Text="删除" />
+                            <asp:Button ID="BtnCopy" runat="server" CausesValidation="False" CommandName="Copy" Text="复制" OnClick="BtnCopy_Click" />
+                            &nbsp;<asp:Button ID="BtnDelete" runat="server" CausesValidation="False" CommandName="Delete" Text="删除" />
                         </ItemTemplate>
                         <HeaderStyle Width="20%" />
                         <FooterTemplate>
-                            <asp:Button ID="Button4" runat="server" Text="新建" />
+                            <asp:Button ID="BtnNew" runat="server" Text="新建" OnClick="BtnNew_Click" />
                         </FooterTemplate>
                         <ItemStyle HorizontalAlign="Center" />
                         <FooterStyle HorizontalAlign="Center" />
@@ -69,6 +69,7 @@
                 </UpdateParameters>
             </asp:SqlDataSource>
         </div>
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:mVoteConnectionString %>" SelectCommand="SELECT * FROM [mvoteindex]"></asp:SqlDataSource>
     </form>
 </body>
 </html>
