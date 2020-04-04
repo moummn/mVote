@@ -8,9 +8,24 @@
     <title></title>
 </head>
 <body>
+    <script type="text/javascript">
+        //<![CDATA[
+        var theForm = document.forms['form1'];
+        if (!theForm) {
+            theForm = document.form1;
+        }
+        function __doPostBack(eventTarget, eventArgument) {
+            if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+                theForm.__EVENTTARGET.value = eventTarget;
+                theForm.__EVENTARGUMENT.value = eventArgument;
+                theForm.submit();
+            }
+        }
+        //]]>
+    </script>
     <form id="form1" runat="server">
         <div>
-            <asp:GridView ID="gvAllLists" runat="server" AutoGenerateColumns="False" DataKeyNames="id" DataSourceID="SqlDataSource_mvoteindex" EnableModelValidation="True" AllowPaging="True" CellPadding="2" CellSpacing="1" ForeColor="#333333" GridLines="None" Width="100%" Font-Names="黑体" ShowFooter="True">
+            <asp:GridView ID="gvAllLists" runat="server" AutoGenerateColumns="False" DataKeyNames="id" DataSourceID="SqlDataSource_mvoteindex" EnableModelValidation="True" AllowPaging="True" CellPadding="2" CellSpacing="1" ForeColor="#333333" GridLines="None" Width="100%" Font-Names="黑体" ShowFooter="True" PageSize="20">
                 <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
                 <Columns>
                     <asp:BoundField DataField="id" HeaderText="项目ID" ReadOnly="True" SortExpression="id" >
@@ -33,6 +48,9 @@
                             <asp:Button ID="Button1" runat="server" CausesValidation="True" CommandName="Update" Text="更新" />
                             &nbsp;<asp:Button ID="Button2" runat="server" CausesValidation="False" CommandName="Cancel" Text="取消" />
                         </EditItemTemplate>
+                        <HeaderTemplate>
+                            <asp:Button ID="BtnRefresh" runat="server" OnClick="BtnRefresh_Click" Text="刷新" />
+                        </HeaderTemplate>
                         <ItemTemplate>
                             <asp:Button ID="BtnCopy" runat="server" CausesValidation="False" CommandName="Copy" Text="复制" OnClick="BtnCopy_Click" />
                             &nbsp;<asp:Button ID="BtnDelete" runat="server" CausesValidation="False" CommandName="Delete" Text="删除" />
@@ -49,6 +67,7 @@
                 <EditRowStyle BackColor="#999999" />
                 <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
                 <HeaderStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
+                <PagerSettings FirstPageText="首页" LastPageText="尾页" Mode="NextPreviousFirstLast" NextPageText="下页" PreviousPageText="上页" />
                 <PagerStyle BackColor="#284775" ForeColor="White" HorizontalAlign="Center" />
                 <RowStyle BackColor="#F7F6F3" ForeColor="#333333" />
                 <SelectedRowStyle BackColor="#E2DED6" Font-Bold="True" ForeColor="#333333" />

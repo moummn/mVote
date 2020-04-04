@@ -25,7 +25,8 @@
         lblCDatetime.Text = sqlcDatetime.ToString
     End Sub
     Protected Sub BtnCancel_Click(sender As Object, e As EventArgs) Handles btnCancel.Click
-        Response.Write("<script>window.opener=null;window.close();</script>")
+        'Response.Write("<script>window.opener=null;window.close();</script>")
+        Response.Redirect("Admin.aspx")
     End Sub
     Protected Sub BtnSave_Click(sender As Object, e As EventArgs) Handles btnSave.Click
         SqlDataSource1.InsertCommand = "INSERT INTO mvoteindex ( cdatetime, pname) VALUES ('" &
@@ -33,6 +34,7 @@
         'SqlDataSource1.InsertCommand = "INSERT INTO mvoteindex ( cdatetime, pname) VALUES (" &
         '    CStr(NewID) & ", '" & sqlcDatetime.ToString & "', '" & tbPName.Text & "')"
         SqlDataSource1.Insert()
-        Response.Write("<script>window.opener=null;window.close();</script>")
+        Response.Redirect("Admin.aspx")
+        'Page.ClientScript.RegisterClientScriptBlock(Me.GetType(), "close", "<script language='javascript' type='text/javascript'>window.opener.__doPostBack('gvAllLists$ctl01$BtnRefresh','');window.close();</script>")
     End Sub
 End Class
