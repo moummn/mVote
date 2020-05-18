@@ -38,7 +38,7 @@
                         </HeaderTemplate>
                         <ItemTemplate>
                             <asp:Button ID="BtnCopy" runat="server" CausesValidation="False" CommandName="Copy" OnClick="BtnCopy_Click" Text="复制" />
-                            &nbsp;<asp:Button ID="BtnDelete" runat="server" CausesValidation="False" CommandName="Delete" Text="删除" OnClientClick="return confirm('您确认删除该记录吗?');" />
+                            &nbsp;<asp:Button ID="BtnDelete" runat="server" CausesValidation="False" CommandName="Delete" Text="删除" OnClientClick="return confirm('您确认删除该项目吗?');" />
                         </ItemTemplate>
                         <HeaderStyle Width="15%" />
                         <FooterTemplate>

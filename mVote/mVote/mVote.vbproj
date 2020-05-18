@@ -83,10 +83,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Admin\Admin.aspx" />
-    <Content Include="Admin\Admin1.aspx" />
+    <Content Include="Admin\Admin1-deleted.aspx" />
     <Content Include="Admin\Admin_EditP.aspx" />
     <Content Include="Admin\Admin_NewP.aspx" />
     <Content Include="Admin\mVoteAll.xml" />
+    <Content Include="Admin\TEST.aspx" />
     <Content Include="Admin\XSLTFile1.xslt" />
     <Content Include="Install\Default.aspx" />
     <Content Include="Default.aspx" />
@@ -100,11 +101,11 @@
       <DependentUpon>Admin.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="Admin\Admin1.aspx.designer.vb">
-      <DependentUpon>Admin1.aspx</DependentUpon>
+    <Compile Include="Admin\Admin1-deleted.aspx.designer.vb">
+      <DependentUpon>Admin1-deleted.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Admin\Admin1.aspx.vb">
-      <DependentUpon>Admin1.aspx</DependentUpon>
+    <Compile Include="Admin\Admin1-deleted.aspx.vb">
+      <DependentUpon>Admin1-deleted.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Admin\Admin_EditP.aspx.designer.vb">
@@ -119,6 +120,13 @@
     </Compile>
     <Compile Include="Admin\Admin_NewP.aspx.vb">
       <DependentUpon>Admin_NewP.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Admin\TEST.aspx.designer.vb">
+      <DependentUpon>TEST.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\TEST.aspx.vb">
+      <DependentUpon>TEST.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Install\Default.aspx.designer.vb">

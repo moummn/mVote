@@ -30,7 +30,11 @@ ErrLine:
         Dim S As String = ""
         For I As Long = 0 To gvAllLists.Rows.Count - 1
             S = gvAllLists.Rows(I).Cells(2).Text
-            gvAllLists.Rows(I).Cells(2).Text = "<a href="".\Admin_EditP.aspx?id=" & gvAllLists.Rows(I).Cells(0).Text & """ target=""newwindow"">" & S & "</a>"
+            'gvAllLists.Rows(I).Cells(2).Text = "<a href="".\Admin_EditP.aspx?id=" & gvAllLists.Rows(I).Cells(0).Text & """ target=""newwindow"">" & S & "</a>"
+            gvAllLists.Rows(I).Cells(2).Text = "<a href="".\Admin_EditP.aspx?id=" &
+                gvAllLists.Rows(I).Cells(0).Text & "&rlp=" & CStr(gvAllLists.PageIndex) &
+                """>" & S & "</a>"
+
         Next
 
     End Sub

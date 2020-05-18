@@ -38,6 +38,15 @@
                 <td><asp:TextBox ID="tbPName" runat="server" Width="100%"></asp:TextBox>
                 </td>
             </tr>
+            
+            <tr>
+                <td colspan="2" class="tbLeft">
+                    <asp:Button ID="btnSave" runat="server" Text="保存" />
+
+                &nbsp;<asp:Button ID="BtnCancel" runat="server" Text="取消" />
+
+                </td>
+            </tr>
         </table>
             
         </div>

@@ -10,6 +10,7 @@
         Return Int(Val(dv.Table.Rows(0).Item(0).ToString))
     End Function
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
+
         SourceID = Int(Val(Request.QueryString("id")))
         Returnlp = Request.QueryString("rlp")
         NewID = FnGetNewID() + 1
@@ -19,7 +20,9 @@
             SqlDataSource1.SelectCommand = "SELECT * FROM [mvoteindex] WHERE id=" & CStr(SourceID)
             Dim dv As DataView = SqlDataSource1.Select(DataSourceSelectArguments.Empty)
             Try
-                tbPName.Text = dv.Table.Rows(0).Item(2).ToString
+                If IsPostBack = False Then
+                    tbPName.Text = dv.Table.Rows(0).Item(2).ToString
+                End If
             Catch ex As System.IndexOutOfRangeException
             End Try
         End If
