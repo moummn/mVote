@@ -14,6 +14,15 @@ Option Explicit On
 Partial Public Class Admin_EditP
 
     '''<summary>
+    '''SqlDataSource1 控件。
+    '''</summary>
+    '''<remarks>
+    '''自动生成的字段。
+    '''若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+    '''</remarks>
+    Protected WithEvents SqlDataSource1 As Global.System.Web.UI.WebControls.SqlDataSource
+
+    '''<summary>
     '''form1 控件。
     '''</summary>
     '''<remarks>
@@ -68,11 +77,11 @@ Partial Public Class Admin_EditP
     Protected WithEvents BtnCancel As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
-    '''SqlDataSource1 控件。
+    '''btnEditVoteTemplate 控件。
     '''</summary>
     '''<remarks>
     '''自动生成的字段。
     '''若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
     '''</remarks>
-    Protected WithEvents SqlDataSource1 As Global.System.Web.UI.WebControls.SqlDataSource
+    Protected WithEvents btnEditVoteTemplate As Global.System.Web.UI.WebControls.Button
 End Class
